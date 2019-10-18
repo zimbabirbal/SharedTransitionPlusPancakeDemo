@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             xmlns:sharedTransitions="clr-namespace:Plugin.SharedTransitions;assembly=Plugin.SharedTransitions"
+             x:Class="AppTransitions.Page1">
+    <ContentPage.Content>
+        
+        <ScrollView>
+            <StackLayout Margin="16,0" Spacing="16">
+                <Label Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+                <Image Source="cat" HeightRequest="200" WidthRequest="200" sharedTransitions:Transition.Name="catTrans"></Image>
+                <yummy:PancakeView BackgroundGradientAngle="45" HorizontalOptions="FillAndExpand" HeightRequest="150" CornerRadius="10" BackgroundGradientStops="{StaticResource Rainbow}" sharedTransitions:Transition.Name="rainBow"/>
+                <yummy:PancakeView BackgroundGradientStartColor="#FF33aa" BackgroundGradientEndColor="#f7e843"
+                                BackgroundGradientAngle="45"
+                                CornerRadius="10"
+                                HeightRequest="200"
+                                WidthRequest="200"
+                                sharedTransitions:Transition.Name="TwoGradient">
+                </yummy:PancakeView>
+               
+                <yummy:PancakeView BackgroundColor="Purple" HasShadow="true" BorderThickness="4" CornerRadius="60,0,0,60" HorizontalOptions="FillAndExpand" HeightRequest="150"
+                                   sharedTransitions:Transition.Name="littleBox">
+                    <Label Text="Hi, I'm a label inside this little box." HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" />
+                </yummy:PancakeView>
+                <yummy:PancakeView BackgroundColor="Orange" BorderIsDashed="true" CornerRadius="60,0,0,60" HorizontalOptions="FillAndExpand" HeightRequest="150">
+                    <Image Source="cat" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Aspect="AspectFill" />
+                </yummy:PancakeView>
+
+                <yummy:PancakeView BackgroundColor="#bfcdde" HorizontalOptions="FillAndExpand" BorderIsDashed="true" HeightRequest="150" CornerRadius="40,10,40,10" BorderThickness="4" BorderColor="#456287">
+                    <Label Text="This box has a nice border." HorizontalOptions="Center" VerticalOptions="Center" TextColor="#456287" />
+                </yummy:PancakeView>
+
+                <yummy:PancakeView BorderDrawingStyle="Outside" BackgroundColor="#78ABE7" HorizontalOptions="FillAndExpand" BorderIsDashed="false" HeightRequest="150" CornerRadius="40,10,40,10" BorderThickness="4" BorderColor="#456287">
+                    <Label Text="This box has a nice outside border." HorizontalOptions="Center" VerticalOptions="Center" TextColor="#ffffff" />
+                </yummy:PancakeView>
+                <yummy:PancakeView BackgroundColor="#e2e885" HorizontalOptions="FillAndExpand" BorderIsDashed="true" HeightRequest="150" CornerRadius="40,10,40,10" BorderThickness="4" BorderColor="#456287">
+                    <yummy:PancakeView.BorderGradientStops>
+                        <yummy:GradientStopCollection>
+                            <yummy:GradientStop Color="#f3855b" Offset="0" />
+                            <yummy:GradientStop Color="#fbcf93" Offset="0.2" />
+                            <yummy:GradientStop Color="#fbe960" Offset="0.4" />
+                            <yummy:GradientStop Color="#a0e67a" Offset="0.6" />
+                            <yummy:GradientStop Color="#33c6ee" Offset="0.8" />
+                            <yummy:GradientStop Color="#c652ba" Offset="1" />
+                        </yummy:GradientStopCollection>
+                    </yummy:PancakeView.BorderGradientStops>
+                    <Label Text="This box has a gradient border." HorizontalOptions="Center" VerticalOptions="Center" />
+                </yummy:PancakeView>
+                <yummy:PancakeView BackgroundColor="#b6e78b" HorizontalOptions="FillAndExpand" HeightRequest="150" CornerRadius="20" HasShadow="true">
+                    <Label Text="Fancy shadows here." HorizontalOptions="Center" VerticalOptions="Center" TextColor="#000000" />
+                </yummy:PancakeView>
+
+                <yummy:PancakeView BackgroundColor="#854fe4" HorizontalOptions="FillAndExpand" HeightRequest="150" CornerRadius="20" Elevation="4" Padding="20,0">
+                    <Label Text="Material elevation lift us up where we belong." TextColor="#ffffff" HorizontalTextAlignment="Center" HorizontalOptions="Center" VerticalOptions="Center" />
+                </yummy:PancakeView>
+
+                <yummy:PancakeView HorizontalOptions="FillAndExpand" HeightRequest="150" CornerRadius="20">
+                    <Grid>
+                        <Image Source="cat" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Aspect="AspectFill" />
+                        <yummy:PancakeView Opacity="0.7">
+                            <yummy:PancakeView.BackgroundGradientStops>
+                                <yummy:GradientStopCollection>
+                                    <yummy:GradientStop Color="#000000" Offset="0" />
+                                    <yummy:GradientStop Color="Transparent" Offset="0.5" />
+                                    <yummy:GradientStop Color="#000000" Offset="1" />
+                                </yummy:GradientStopCollection>
+                            </yummy:PancakeView.BackgroundGradientStops>
+                        </yummy:PancakeView>
+                    </Grid>
+                </yummy:PancakeView>
+                <yummy:PancakeView HasShadow="true" BorderIsDashed="true" BorderColor="OrangeRed" BorderThickness="3" BorderDrawingStyle="Outside" CornerRadius="60,0,0,60" HorizontalOptions="FillAndExpand" HeightRequest="150">
+                    <Image Source="cat" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Aspect="AspectFill" />
+                </yummy:PancakeView>
+
+                <yummy:PancakeView HasShadow="True" Sides="5" BackgroundColor="Orange" BorderIsDashed="true" CornerRadius="20" HorizontalOptions="FillAndExpand" HeightRequest="150">
+                    <Image Source="cat" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Aspect="AspectFill" />
+                </yummy:PancakeView>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
