@@ -7,7 +7,7 @@ For this you have at least 3.6 and above version of  Xamarin Forms
 
 ### Prerequisites
 
-Need to install these packages
+Need to install these packages\
 [SharedTransitions Plugin](https://www.nuget.org/packages/Xamarin.Plugin.SharedTransitions/2.0.2)\
 [PancakeView Plugin](https://www.nuget.org/packages/Xamarin.Forms.PancakeView/)
 
