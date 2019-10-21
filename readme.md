@@ -12,6 +12,6 @@ Need to install these packages\
 [PancakeView Plugin](https://www.nuget.org/packages/Xamarin.Forms.PancakeView/)
 
 ### Demo
-![demo](demo.gif =300*720)
+<img src="demo.gif" width="300" height="720">
 
 
