@@ -1,4 +1,4 @@
-#Xamarin Forms using Shared Transitions and Pancake view 
+# Xamarin Forms using Shared Transitions and Pancake view 
 
 This is sample project using Xamarin.Plugin.SharedTransitions and Xamarin.Forms.PancakeView by GiampaoloGabba & sthewissen
 
@@ -8,7 +8,7 @@ For this you have at least 3.6 and above version of  Xamarin Forms
 ### Prerequisites
 
 Need to install these packages
-[SharedTransitions Plugin](https://www.nuget.org/packages/Xamarin.Plugin.SharedTransitions/2.0.2)
+[SharedTransitions Plugin](https://www.nuget.org/packages/Xamarin.Plugin.SharedTransitions/2.0.2)\
 [PancakeView Plugin](https://www.nuget.org/packages/Xamarin.Forms.PancakeView/)
 
 
