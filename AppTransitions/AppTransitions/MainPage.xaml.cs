@@ -17,7 +17,7 @@ namespace AppTransitions
 
         private async void Button_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Page1(string.Empty));
+            await Navigation.PushAsync(new Page1());
         }
 
         private async void ListView_ItemTapped(object sender, ItemTappedEventArgs e)
@@ -25,7 +25,7 @@ namespace AppTransitions
             var tappedItemData = e.Item as string;
             //this is required in order to pass the views to animate
             SharedTransitionNavigationPage.SetTransitionSelectedGroup(this, tappedItemData);
-            await Navigation.PushAsync(new Page1(tappedItemData));
+            await Navigation.PushAsync(new Page1());
         }
     }
 }

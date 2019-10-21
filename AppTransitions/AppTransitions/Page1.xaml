@@ -3,15 +3,19 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
              xmlns:sharedTransitions="clr-namespace:Plugin.SharedTransitions;assembly=Plugin.SharedTransitions"
-             x:Class="AppTransitions.Page1">
+             x:Class="AppTransitions.Page1"
+             Title="Second Page">
     <ContentPage.Content>
         
         <ScrollView>
             <StackLayout Margin="16,0" Spacing="16">
-                <Label Text="Welcome to Xamarin.Forms!"
+                <Label Text="Welcome to Second Page!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
-                <Image Source="cat" HeightRequest="200" WidthRequest="200" sharedTransitions:Transition.Name="catTrans"></Image>
+                <StackLayout Orientation="Horizontal" Spacing="16" HorizontalOptions="Center">
+                    <Image Source="dog" HeightRequest="200" WidthRequest="200" sharedTransitions:Transition.Name="dogTrans"></Image>
+                    <Image Source="cat" HeightRequest="200" WidthRequest="200" sharedTransitions:Transition.Name="catTrans"></Image>
+                </StackLayout>
                 <yummy:PancakeView BackgroundGradientAngle="45" HorizontalOptions="FillAndExpand" HeightRequest="150" CornerRadius="10" BackgroundGradientStops="{StaticResource Rainbow}" sharedTransitions:Transition.Name="rainBow"/>
                 <yummy:PancakeView BackgroundGradientStartColor="#FF33aa" BackgroundGradientEndColor="#f7e843"
                                 BackgroundGradientAngle="45"

@@ -5,16 +5,16 @@
              xmlns:local="clr-namespace:AppTransitions"
              xmlns:sharedTransitions="clr-namespace:Plugin.SharedTransitions;assembly=Plugin.SharedTransitions"
              x:Class="AppTransitions.MainPage"
-             Title="Have Fun">
+             Title="Main Page">
 
     <StackLayout Margin="16,0">
         <!-- Place new controls here -->
-        <Label Text="Shared Transitions + Pancake" 
+        <Label Text="Shared Transitions And Pancake" 
            HorizontalOptions="Center"
            VerticalOptions="CenterAndExpand" />
         
        
-        <Image Source="cat" sharedTransitions:Transition.Name="catTrans" HeightRequest="100" WidthRequest="100"></Image>
+        <Image Source="dog" sharedTransitions:Transition.Name="dogTrans" HeightRequest="100" WidthRequest="100"></Image>
 
         <yummy:PancakeView  BackgroundGradientAngle="45" HorizontalOptions="FillAndExpand" HeightRequest="40" CornerRadius="10" BackgroundGradientStops="{StaticResource Rainbow}" sharedTransitions:Transition.Name="rainBow" />
 
@@ -30,23 +30,26 @@
             <Label Text="Hi, I'm a label inside this little box." HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" />
         </yummy:PancakeView>
 
-        <Button Text="Next" Clicked="Button_Clicked"></Button>
+        <Button Text="Next page" Clicked="Button_Clicked"></Button>
+        <Label Text="Listview"></Label>
         <ListView HasUnevenRows="True" ItemTapped="ListView_ItemTapped">
             <ListView.ItemsSource>
                 <x:Array Type="{x:Type x:String}">
-                    <x:String>mono</x:String>
+                    <x:String>mulberry</x:String>
                     <x:String>apple</x:String>
                     <x:String>mango</x:String>
-                    <x:String>pinaple</x:String>
+                    <x:String>pineapple</x:String>
                 </x:Array>
             </ListView.ItemsSource>
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <StackLayout>
-                            <Image Source="cat" sharedTransitions:Transition.Name="catTrans" HeightRequest="120" WidthRequest="120"
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="16">
+                            <Label Text="{Binding .}" VerticalOptions="Center" WidthRequest="100"></Label>
+                            <Image Source="cat" sharedTransitions:Transition.Name="catTrans" HeightRequest="80" WidthRequest="80" 
                                    sharedTransitions:Transition.Group="{Binding .}"></Image>
-                            <Label Text="{Binding .}"></Label>
+                            <Image Source="dog" sharedTransitions:Transition.Name="dogTrans" HeightRequest="80" WidthRequest="80" 
+                                   sharedTransitions:Transition.Group="{Binding .}"></Image>
                         </StackLayout>
                     </ViewCell>
                 </DataTemplate>

@@ -163,4 +163,10 @@
       <Name>AppTransitions</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\cat.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\dog.jpg" />
+  </ItemGroup>
 </Project>
