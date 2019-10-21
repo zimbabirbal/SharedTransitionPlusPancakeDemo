@@ -11,4 +11,7 @@ Need to install these packages\
 [SharedTransitions Plugin](https://www.nuget.org/packages/Xamarin.Plugin.SharedTransitions/2.0.2)\
 [PancakeView Plugin](https://www.nuget.org/packages/Xamarin.Forms.PancakeView/)
 
+### Demo
+![demo](<img src="https://github.com/zimbabirbal/SharedTransitionPlusPancakeDemo/blob/master/GifImage/image.gif" width="200" height="400"/>)
+
 
